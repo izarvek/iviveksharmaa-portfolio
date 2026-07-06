@@ -1,9 +1,9 @@
-// import Image from "next/image";
+import React from 'react'
 
-export default function page() {
+const page = () => {
   return (
-    <div >
-      <h1>Welcome to My Portfolio</h1>
-    </div>
-  );
+    <h1>Welcome to My Portfolio</h1>
+  )
 }
+
+export default page
