@@ -1,8 +1,14 @@
-import React from 'react'
+import Footer from '@/components/layout/Footer'
+import Navbar from '@/components/layout/Navbar'
+import Hero from '@/components/hero/Hero'
 
 const page = () => {
   return (
-    <h1>Welcome to My Portfolio</h1>
+    <>
+    <Navbar/>
+    <Hero/>
+    <Footer/>
+    </>
   )
 }
 
