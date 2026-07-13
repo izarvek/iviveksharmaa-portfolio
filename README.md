@@ -1,8 +1,6 @@
-# Aadhi Sharma Portfolio 🚀
-
 <div align="center">
 
-# 👋 Hi, I'm Aadhi Sharma
+# 👋 Hi, I'm Vivek Sharma
 
 ### Full Stack Software Developer
 
