@@ -27,7 +27,15 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body>{children}</body>
+      <body>
+        <style>
+          {`
+            @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+            *{ font-family: "Geist", sans-serif; }
+          `}
+        </style>
+        {children}
+      </body>
     </html>
   );
 }

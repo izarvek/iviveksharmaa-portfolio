@@ -239,13 +239,13 @@ A scalable online shopping platform with secure authentication, payment integrat
 Clone the repository.
 
 ```bash
-git clone https://github.com/your-username/portfolio.git
+git clone https://github.com/izarvek/iviveksharmaa-portfolio.git
 ```
 
 Move into the project.
 
 ```bash
-cd portfolio
+cd iviveksharmaa-portfolio
 ```
 
 Install dependencies.
