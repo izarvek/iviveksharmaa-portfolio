@@ -69,7 +69,10 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                onClick={() => handleNavigation()}
+                onClick={() => {
+                  handleNavigation();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
                 className={`relative transition group ${
                   pathname === item.href
                     ? "text-cyan-500"
@@ -94,7 +97,9 @@ const Navbar = () => {
               Resume
             </button>
 
-            <button className={`flex items-center gap-2 rounded-full  px-6 py-2.5 font-semibold  shadow-lg hover:scale-105 transition-all duration-300 ${scrolled ? "bg-white text-black" : "bg-blue-900 text-white"}`}>
+            <button
+              className={`flex items-center gap-2 rounded-full  px-6 py-2.5 font-semibold  shadow-lg hover:scale-105 transition-all duration-300 ${scrolled ? "bg-white text-black" : "bg-blue-900 text-white"}`}
+            >
               <Briefcase size={18} />
               Hire Me
             </button>
