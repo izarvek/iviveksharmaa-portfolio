@@ -1,7 +1,16 @@
 import Image from "next/image";
 import { FaQuoteLeft, FaStar } from "react-icons/fa";
+
+interface Testimonial {
+  id: number;
+  description: string;
+  image: string;
+  name: string;
+  company: string;
+}
+
 const Testimonials = () => {
-  const testimonials = [
+  const testimonials: Testimonial[] = [
     {
       id: 1,
       description:
@@ -91,7 +100,7 @@ const Testimonials = () => {
     { start: 6, end: 9, className: "hidden lg:block animate-scroll-up-3" },
   ];
 
-  const renderCard = (testimonial, index) => (
+  const renderCard = (testimonial: Testimonial, index: number) => (
     <div
       key={`${testimonial.id}-${index}`}
       className="group relative mb-4 overflow-hidden rounded-2xl border border-blue-500/20 bg-blue-950 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:shadow-xl hover:shadow-cyan-500/10"
