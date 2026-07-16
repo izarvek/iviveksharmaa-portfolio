@@ -90,19 +90,23 @@ const Navbar = () => {
 
           {/* Desktop Buttons */}
           <div className="hidden lg:flex items-center gap-4">
-            <button
-              className={`flex items-center gap-2 rounded-full border  px-5 py-2.5 transition-all duration-300 ${scrolled ? "text-white hover:bg-white/10 border-white/20" : "text-black border-gray-200"}`}
-            >
-              <Download size={18} />
-              Resume
-            </button>
+            <Link href="/resume">
+              <button
+                className={`flex items-center gap-2 rounded-full border  px-5 py-2.5 transition-all duration-300 ${scrolled ? "text-white hover:bg-white/10 border-white/20" : "text-black border-gray-200"}`}
+              >
+                <Download size={18} />
+                Resume
+              </button>
+            </Link>
 
-            <button
-              className={`flex items-center gap-2 rounded-full  px-6 py-2.5 font-semibold  shadow-lg hover:scale-105 transition-all duration-300 ${scrolled ? "bg-white text-black" : "bg-blue-900 text-white"}`}
-            >
-              <Briefcase size={18} />
-              Hire Me
-            </button>
+            <Link href="/hire">
+              <button
+                className={`flex items-center gap-2 rounded-full  px-6 py-2.5 font-semibold  shadow-lg hover:scale-105 transition-all duration-300 ${scrolled ? "bg-white text-black" : "bg-blue-900 text-white"}`}
+              >
+                <Briefcase size={18} />
+                Hire Me
+              </button>
+            </Link>
           </div>
 
           {/* Mobile Button */}
